@@ -1,0 +1,57 @@
+@import "./source/sass/variables/variables.scss";
+@import "./source/fonts/fonts.scss";
+@import "./source/sass/mixin/mixin.scss";
+
+.category_container__wrapper{
+    width: $width-main;
+    margin: 100px auto 0 auto;
+
+    .category__container{
+        width: $width-basic;
+        height: 542px;
+        margin: 0 auto;
+
+        #category__heading{
+            font-size: $heading-basic;
+            margin-bottom: 50px;
+        }
+        .card__container{
+            width: $width-basic;
+            @include flex-row-sb;
+            position: relative; 
+
+            #card__next_btn{
+                width: 40px;
+                height: 40px;
+                background-color: $gold;
+                position: absolute;
+                top:50%;
+                right: 2%;
+            }
+
+            .card{
+                @include flex-col;
+                width: fit-content;
+                position: relative;
+                
+                .card__image{
+                    width: $width-img;
+                    height: $height-img; 
+                }
+                .card-btn{
+                    position: absolute;
+                    bottom: 0;
+                    left:0;
+                    background-color: $btn-card-color;
+                    height: 40px;
+                    width: $width-img;
+                    text-align: center;
+                    border: none;
+                    color: $white;
+                }
+            }
+
+        }
+
+    }
+}

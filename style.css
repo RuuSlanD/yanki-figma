@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +7,8 @@
   list-style-type: none;
   list-style: none;
   text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
 }
 
 .flex-row {
@@ -21,6 +24,7 @@
 }
 
 .container__main {
+  margin: 0 auto;
   position: relative;
   background-color: #252525;
   width: 1440px;
@@ -30,26 +34,44 @@
   color: #fff;
   font-size: 16px;
   text-transform: uppercase;
-  weight: 300;
 }
 .container__main .navbar {
   margin: 24px auto 0 auto;
   height: 40px;
   width: 1140px;
-  background-color: rgb(132, 107, 107);
   z-index: 1;
 }
 .container__main .navbar .navbar__left img {
   width: 34px;
 }
-.container__main .navbar .navbar__left .navbar__item ol {
-  padding: 0 15px;
+.container__main .navbar .navbar__left .navbar__item {
+  margin-right: 104px;
+}
+.container__main .navbar .navbar__left .navbar__items {
+  width: 235px;
+}
+.container__main .navbar .navbar__left .navbar__items ol {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0;
+}
+.container__main .navbar .navbar__right {
+  margin-right: 60px;
+}
+.container__main .navbar .navbar__right .navbar__item {
+  margin-right: 70px;
+}
+.container__main .navbar .navbar__right .navbar__item .arrow-drop {
+  margin-left: 5px;
 }
 .container__main .navbar .navbar__right .navbar__item .select {
   padding: 0 15px;
 }
 .container__main .navbar .navbar__right .navbar__item .item__navigation {
-  padding: 0 8%;
+  padding: 0 15%;
+}
+.container__main .navbar .elements__navigation:last-child {
+  margin-right: 47px;
 }
 .container__main .heading__main {
   position: absolute;
@@ -57,6 +79,22 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container__main .heading__main h1 {
+  font-size: 46px;
+}
+.container__main .heading__main #rectangle {
+  display: block;
+  width: 120px;
+  height: 1px;
+  background-color: #fff;
+  margin: 20px 0;
+}
+.container__main .heading__main p {
+  font-size: 16px;
 }
 .container__main .background-img__wrapper {
   width: 100%;

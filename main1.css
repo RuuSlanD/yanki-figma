@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+.category_container__wrapper {
+  width: 1440px;
+  margin: 100px auto 0 auto;
+}
+.category_container__wrapper .category__container {
+  width: 1140px;
+  height: 542px;
+  margin: 0 auto;
+}
+.category_container__wrapper .category__container #category__heading {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+.category_container__wrapper .category__container .card__container {
+  width: 1140px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+.category_container__wrapper .category__container .card__container #card__next_btn {
+  width: 40px;
+  height: 40px;
+  background-color: #E0BEA2;
+  position: absolute;
+  top: 50%;
+  right: 2%;
+}
+.category_container__wrapper .category__container .card__container .card {
+  display: flex;
+  flex-direction: column;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+}
+.category_container__wrapper .category__container .card__container .card .card__image {
+  width: 274px;
+  height: 450px;
+}
+.category_container__wrapper .category__container .card__container .card .card-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(224, 190, 162, 0.7490196078);
+  height: 40px;
+  width: 274px;
+  text-align: center;
+  border: none;
+  color: #fff;
+}/*# sourceMappingURL=main1.css.map */

@@ -1,14 +1,7 @@
-$black: #252525;
-$white: #fff;
-$gold: #E0BEA2;
-$navbar-text: 18px;
-$basic-text: 16px;
-$heading-main: 46px;
-$heading-basic: 36px;
-$width-basic: 1140px;
-$width-main: 1440px;
-$height-main: 900px;
-$height-navbar: 40px;
+// @import "./source/fonts/fonts.scss";
+@import "./source/sass/variables/variables.scss";
+@import "./source/fonts/fonts.scss";
+@import "./source/sass/mixin/mixin.scss";
 
 
 *{
@@ -19,6 +12,8 @@ $height-navbar: 40px;
     list-style-type: none;
     list-style: none;
     text-decoration: none;
+    font-family: $basic-font;
+    font-weight: $basic-weight;
 }
 
 .flex-row{
@@ -35,6 +30,7 @@ $height-navbar: 40px;
 
 
 .container__main{
+    margin: 0 auto;
     position: relative;
     background-color: #252525;
     width: $width-main;
@@ -43,14 +39,13 @@ $height-navbar: 40px;
         color: $white;
         font-size: $basic-text;
         text-transform: uppercase;
-        weight: 300;
+        // weight: 300;
     }
 
     .navbar{
         margin: 24px auto 0 auto;
         height: $height-navbar;
         width: $width-basic;
-        background-color: rgb(132, 107, 107);
         z-index: 1;
 
         .navbar__left{
@@ -58,29 +53,46 @@ $height-navbar: 40px;
                 width: 34px;
             }
             // padding: 0 20px;
-
             .navbar__item{
+                margin-right: 104px;
+            }
 
+            .navbar__items{
+                width: 235px;
                 ol{
-                    padding: 0 15px;
+                    width: fit-content;
+                    padding: 0;
+
                 }
             }
         }
 
-        .navbar__right{
+        .navbar__center{
 
+        }
+
+        .navbar__right{
+            margin-right: 60px;
 
             .navbar__item{
+                margin-right: 70px;
 
+                .arrow-drop{
+                    margin-left: 5px;
+                }
 
                 .select{
                     padding: 0 15px;
                 }
 
                 .item__navigation{
-                    padding: 0 8%;
+                    padding: 0 15%;
                 }
             }
+        }
+
+        .elements__navigation:last-child{
+            margin-right: 47px;
         }
     }
 
@@ -89,7 +101,25 @@ $height-navbar: 40px;
         top: 50%; left: 50%;  
         transform: translate(-50%, -50%);
         z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        h1{
+            font-size: 46px;
+        }
 
+        #rectangle{
+            display: block;
+            width: 120px;
+            height: 1px;
+            background-color: $white;
+            margin: 20px 0;
+        }
+
+        p{
+            font-size: 16px;
+        }
     }
 
     .background-img__wrapper{
