@@ -1,12 +1,26 @@
+// fonts
 $basic-font: 'Raleway', sans-serif;
 $basic-weight: 300;
 $black: #252525;
 $white: #fff;
 $gold: #E0BEA2;
+$hover-footer: rgba(37, 37, 37, 1);
+
+
+// elements colors
+$btn-card-color: #E0BEA2BF;
+$hover-btn-card-color: hsla(27, 50%, 76%, 1);
+$inp-border-color:hsla(0, 0%, 15%, 0.5);
+
+
+// text px
 $navbar-text: 18px;
 $basic-text: 16px;
 $heading-main: 46px;
 $heading-basic: 36px;
+$heading-footer: 20px;
+
+// width height
 $width-basic: 1140px;
 $width-main: 1440px;
 $height-main: 900px;
@@ -15,4 +29,8 @@ $height-navbar: 40px;
 // card image
 $width-img: 274px;
 $height-img: 450px;
-$btn-card-color: #E0BEA2BF;
+
+
+// button
+$btn-basic-w:600px;
+$btn-basic-h:50px;

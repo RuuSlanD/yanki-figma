@@ -7,33 +7,33 @@
     <title>YANKI</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="main1.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 <body>
     <div class="container__main flex-col">
         <div class="navbar flex-row">
             <div class="navbar__left flex-row">
                 <div class="navbar__item">
-                    <img src="source/svg/Group 1.svg" alt="">
+                    <img class="nav-elem" src="source/svg/Group 1.svg" alt="">
                 </div>
                 <div class="navbar__items flex-row">
-                    <ol><a href="">NEW</a></ol>
-                    <ol><a href="">Каталог</a></ol>
-                    <ol><a href="">О нас</a></ol>
+                    <ol class="nav-elem"><a href="">NEW</a></ol>
+                    <ol class="nav-elem"><a href="">Каталог</a></ol>
+                    <ol class="nav-elem"><a href="">О нас</a></ol>
                 </div>
             </div>
             <div class="navbar__center">
-                <img src="source/svg/YANKI.svg" alt="">
-
+                <img class="nav-elem" src="source/svg/YANKI.svg" alt="">
             </div>
             <div class="navbar__right flex-row">
                 <div class="navbar__item flex-row">
                    <div class="item__language select flex-row">
-                        <p>RU</p>
-                        <img class='arrow-drop' src="source/svg/Frame (5).svg" alt="">
+                        <p class="nav-elem">RU</p>
+                        <img class="nav-elem" class='arrow-drop' src="source/svg/Frame (5).svg" alt="">
                    </div> 
                    <div class="item__currency flex-row select">
-                        <p>UAH</p>
-                        <img class='arrow-drop' src="source/svg/Frame (5).svg" alt="">
+                        <p class="nav-elem">UAH</p>
+                        <img class="nav-elem" class='arrow-drop' src="source/svg/Frame (5).svg" alt="">
                    </div>
                 </div>
                 <div class="navbar__item elements__navigation flex-row">
@@ -85,5 +85,48 @@
             </div>
         </div>
     </div>
+
+    <div class="subscribe_container__wrapper">
+        <div class="subscribe__container">
+            <form action="" class="subscribe__form">
+                <h1 class="category__heading">Узнайте первым о новинках</h1>
+                <input id="subscribe__input" name="email" type="email" placeholder="Ваш e-mail" type="text">
+                <button type="submit" class="subscribe__btn basic__button">Подписаться</button>
+            </form>
+            <div class="agreement__block">
+                <p class="agreement__text">Нажимая на кнопку «Подписаться», я соглашаюсь на обработку моих персональных данных и ознакомлен(а) с условиями конфиденциальности.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer__container">
+        <div class="footer__block company__block">
+                <h1 class="footer__block_heading">Компания</h1>
+                <a class="footer__block_text" href="#">О нас</a>
+                <a class="footer__block_text" href="#">Контакты</a>
+        </div>
+        <div class="footer__block useful__block">
+            <h1 class="footer__block_heading">Полезное</h1>
+            <a class="footer__block_text" href="#">Оплата и доставка</a>
+            <a class="footer__block_text" href="#">Бонусная система</a>
+        </div>
+
+        <div class="footer__block buyer__block">
+            <h1 class="footer__block_heading">Покупателю</h1>
+            <a class="footer__block_text" href="#">Избранное</a>
+            <a class="footer__block_text" href="#">Публичная оферта</a>
+            <a class="footer__block_text" href="#">Политика конфиденциальности</a>
+        </div>
+        <div class="footer__block contacts__block">
+            <h1 class="footer__block_heading">Контакты</h1>
+            <div class="footer__block_media">
+
+            </div>
+            <a class="footer__block_text" href="#">+38(073) 096 36 44</a>
+            <a class="footer__block_text" href="#">info@yanki.com</a>
+        </div>
+
+    </footer>
 </body>
 </html>

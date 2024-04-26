@@ -41,6 +41,9 @@
   width: 1140px;
   z-index: 1;
 }
+.container__main .navbar .nav-elem {
+  cursor: pointer;
+}
 .container__main .navbar .navbar__left img {
   width: 34px;
 }
@@ -95,6 +98,7 @@
 }
 .container__main .heading__main p {
   font-size: 16px;
+  cursor: pointer;
 }
 .container__main .background-img__wrapper {
   width: 100%;

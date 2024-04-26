@@ -1,0 +1,28 @@
+@import "./source/sass/variables/variables.scss";
+@import "./source/sass/mixin/mixin.scss";
+
+
+.footer__container{
+    @include flex-row-sb;
+    width: $width-basic;
+    margin: 0 auto 74px auto;
+    
+    .footer__block{
+        @include flex-col;
+
+        .footer__block_heading{
+            margin-bottom: 20px;
+            font-size: $heading-footer;
+        }
+        
+
+        .footer__block_text{
+            margin-bottom: 10px;
+    
+            &:hover{    
+                color: $hover-footer;
+                opacity:70%;
+            }
+        }
+    }
+}

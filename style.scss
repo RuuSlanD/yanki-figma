@@ -1,4 +1,3 @@
-// @import "./source/fonts/fonts.scss";
 @import "./source/sass/variables/variables.scss";
 @import "./source/fonts/fonts.scss";
 @import "./source/sass/mixin/mixin.scss";
@@ -42,11 +41,16 @@
         // weight: 300;
     }
 
+
     .navbar{
         margin: 24px auto 0 auto;
         height: $height-navbar;
         width: $width-basic;
         z-index: 1;
+
+        .nav-elem{
+            cursor: pointer;
+        }
 
         .navbar__left{
             img{
@@ -119,6 +123,7 @@
 
         p{
             font-size: 16px;
+            cursor: pointer;
         }
     }
 

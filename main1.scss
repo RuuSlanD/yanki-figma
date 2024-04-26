@@ -1,5 +1,4 @@
 @import "./source/sass/variables/variables.scss";
-@import "./source/fonts/fonts.scss";
 @import "./source/sass/mixin/mixin.scss";
 
 .category_container__wrapper{
@@ -18,7 +17,7 @@
         .card__container{
             width: $width-basic;
             @include flex-row-sb;
-            position: relative; 
+            position: relative;
 
             #card__next_btn{
                 width: 40px;
@@ -33,10 +32,11 @@
                 @include flex-col;
                 width: fit-content;
                 position: relative;
-                
+
                 .card__image{
                     width: $width-img;
-                    height: $height-img; 
+                    height: $height-img;
+                    cursor: pointer;
                 }
                 .card-btn{
                     position: absolute;
@@ -48,10 +48,78 @@
                     text-align: center;
                     border: none;
                     color: $white;
+                    cursor: pointer;
+
+                    &:hover{
+                        background-color: $hover-btn-card-color;
+                        box-shadow: 0px 5px 7px 0px rgba(37, 37, 37, 0.15);
+                        
+                    }
                 }
             }
 
         }
 
+    }
+}
+
+
+// Subscribe
+
+.subscribe_container__wrapper{
+    width:$width-main;
+    margin: 0 auto;
+    margin-bottom: 100px;
+
+    .subscribe__container{
+        margin: 100px auto 0 auto;
+        width: 600px;
+        height: 270px;
+
+
+    .agreement__block{
+        margin-top: 20px;
+        .agreement__text{
+            font-weight: 200;
+            text-align: center;
+            font-size: $basic-text;
+        }
+    }
+
+        .subscribe__form{
+            @include flex-col;
+            margin: 0 auto;
+            text-align: center;
+
+            .category__heading{
+                margin-bottom: 50px;
+            }
+
+            #subscribe__input{
+                width: $btn-basic-w;
+                height: $btn-basic-h;
+                padding: 16px 81px 17px 81px;
+                text-align: center;
+                border: 0.5px solid $inp-border-color;
+                font-size: $basic-text
+            }
+
+            .subscribe__btn{
+                margin-top: 20px;
+                width: $btn-basic-w;
+                height: $btn-basic-h;
+                padding: 16px 81px 17px 81px;
+                background-color: $gold;
+                color: $white;
+                text-transform: uppercase;
+                border: 0px;
+                cursor: pointer;
+
+                &:hover{
+                    background: $hover-btn-card-color;
+                    box-shadow: 0px 5px 7px 0px rgba(37, 37, 37, 0.15);
+                }
+            }
+        }
     }
 }
