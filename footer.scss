@@ -1,5 +1,5 @@
-@import "./source/sass/variables/variables.scss";
-@import "./source/sass/mixin/mixin.scss";
+@import "./source/sass/variables";
+@import "./source/sass/mixin";
 
 
 .footer__container{
@@ -25,4 +25,9 @@
             }
         }
     }
+}
+
+
+.aaaaaaaaaaa{
+    color:black;
 }
