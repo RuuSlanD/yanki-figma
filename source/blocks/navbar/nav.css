@@ -34,13 +34,12 @@
 }
 
 .container__navbar {
-  background-color: bisque;
   margin: 0 auto;
   position: relative;
   width: 1440px;
   height: 100px;
 }
-.container__navbar ol, .container__navbar ul, .container__navbar form, .container__navbar a, .container__navbar div, .container__navbar p, .container__navbar h1 {
+.container__navbar ol, .container__navbar ul, .container__navbar form, .container__navbar a, .container__navbar div, .container__navbar p, .container__navbar h1, .container__navbar .arrow-drop {
   color: #fff;
   font-size: 16px;
   text-transform: uppercase;

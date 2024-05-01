@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .footer__container {
   display: flex;
   flex-direction: row;
@@ -19,6 +20,14 @@
 .footer__container .footer__block .footer__block_text:hover {
   color: rgb(37, 37, 37);
   opacity: 70%;
+}
+.footer__container .footer__block .soсiacl-network {
+  width: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
 }
 
 .aaaaaaaaaaa {

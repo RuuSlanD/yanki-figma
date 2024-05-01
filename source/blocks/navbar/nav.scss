@@ -37,12 +37,11 @@
 }
 
 .container__navbar{
-    background-color: bisque        ;
     margin: 0 auto;
     position: relative;
     width: $width-main;
     height: $height-con-navbar;
-    ol,ul,form, a, div, p, h1{
+    ol,ul,form, a, div, p, h1, .arrow-drop{
         color: $white;
         font-size: $basic-text;
         text-transform: uppercase;

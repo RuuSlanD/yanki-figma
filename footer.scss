@@ -24,6 +24,13 @@
                 opacity:70%;
             }
         }
+
+        .soсiacl-network{
+            width: 48px;
+            @include flex-row-sb;
+            display: flex;
+            align-items: center;
+        }
     }
 }
 

@@ -71,6 +71,7 @@
   top: 50%;
   right: -10%;
   transform: translate(0, -50%);
+  cursor: pointer;
 }
 .container__main .background-img__wrapper {
   width: 100%;

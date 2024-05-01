@@ -11,6 +11,10 @@ $hover-footer: rgba(37, 37, 37, 1);
 $btn-card-color: #E0BEA2BF;
 $hover-btn-card-color: hsla(27, 50%, 76%, 1);
 $inp-border-color:hsla(0, 0%, 15%, 0.5);
+$circle-wh: white;
+$circle-bl: hsla(217, 23%, 54%, 1);
+$circle-be: hsla(43, 72%, 81%, 1);
+
 
 
 // text px
@@ -19,6 +23,7 @@ $basic-text: 16px;
 $heading-main: 46px;
 $heading-basic: 36px;
 $heading-footer: 20px;
+$size-text-right: 14px;
 
 // width height
 $width-basic: 1140px;
@@ -35,3 +40,7 @@ $height-img: 450px;
 // button
 $btn-basic-w:600px;
 $btn-basic-h:50px;
+
+
+//catalog margin card text
+$margin-top: 5px; 

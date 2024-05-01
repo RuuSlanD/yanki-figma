@@ -1,0 +1,200 @@
+@import "./source/sass/mixin";
+@import "./source/sass/variables";
+
+
+
+
+.container__navbar__wrapper{
+    position: static;
+
+    .catalog__item{ 
+        color: $gold;
+    }
+    .logo__item{
+            color: $gold;
+    }
+    .profile__item{
+        img{
+            color: $gold;
+        }
+    }
+    .loves__item{
+        img{
+            color: $gold;
+        }
+    }
+    .backet__item{
+        a{
+            img{
+                color: $gold;
+            }
+        }
+    }
+}
+
+
+.wrapper-top{
+    position: static;   
+    // margin-top: 100px;
+}
+
+// персональные настройки цвета текста навбара
+.container__navbar{
+    ol,ul,form, a, div, p, h1, .arrow-drop{
+        color: $black;
+    }
+}
+
+// каталог
+.container__main__wrapper{
+    position: static;   
+    .block__pointer{
+        @include flex-row;
+        margin: 0px 0px 30px 0px;
+        .text__pointer{
+            margin-right: 5px;
+        }
+    }
+    .container__basic{
+        width: $width-basic;
+        margin: 0 auto;
+    }
+    .container__catalog__wrapper{
+        @include flex-row;
+        .container__catalog{
+            margin-right: 30px;
+            
+            .catalog__bar{
+                width: 150px;
+
+                h1{
+                    font-size: $heading-footer;
+                    margin-bottom: 30px;
+                }
+                P{
+                    font-size: $basic-text;
+                    margin-bottom: 20px;
+                    &:hover{    
+                        color: $hover-footer;
+                        opacity:70%;
+                    }
+                }
+            }
+        }
+        .block__card__wrapper{
+
+            .block__filter{
+                @include flex-row;
+                .filter_item{
+                    margin: 0 30px 0 0;
+                    .item__filter{
+                    }
+                }
+            }
+            .block__card{
+                @include flex-row-sb;
+                flex-wrap: wrap;
+                width: 960px;
+                min-height: 100px;
+
+                .card__wrapper{
+                    margin-top: 30px;
+                    position: relative;
+                    text-align: center;
+
+                    .img__wrapper{
+                        position: relative;
+                        overflow: hidden;
+                        width: 310px;
+                        height: 360px;
+                        
+                        img{
+                            object-fit: cover;
+                            object-position: center;
+                            position: absolute;   
+                            top:0;
+                            left:0;
+                        }    
+                    }
+                    .card__naming__wrapper{
+                        width: 300px;
+                        @include flex-row-center;
+                        .card__naming{
+                            margin-top: 15px;
+                            font-size: $basic-text;
+                        }
+                        .card__naming__new{
+                            font-size: $basic-text;
+                            margin-top: 15px;
+                            margin-left: 10px;
+                            color: $gold;
+                        }
+                    }
+                    .card__price{
+                        margin-top: $margin-top;
+                        font-size: $basic-text;
+                        font-weight: 700;
+                    }
+                    .card__size{
+                        margin-top: $margin-top;
+                        color: $inp-border-color;
+                        font-size: $basic-text;
+                        text-transform: uppercase;
+                    }
+                    .card__colors{
+                        @include flex-row-sb;
+                        width:52px;
+                        margin: $margin-top auto 0 auto;
+                        
+                        .color__circle{
+                            border-radius: 50%; 
+                            display: block;
+                            width: 14px;
+                            height:14px;
+                        }
+                        .cir_wh{
+                            background-color: $circle-wh;
+                            border: 0.3px solid hsla(0, 0%, 15%, 1);
+                        }
+                        .cir_bl{background-color: $circle-bl;
+                        }
+                        .cir_be{background-color: $circle-be;}
+                    }
+
+                    .block__favorites{
+                        width: 40px;
+                        height: 40px;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        .card__like{
+                            width: 100%;
+                            height: 100%;
+                            background-color: $gold;
+                            position: relative;
+                            top: 0;
+                            right: 0;
+                            border: none;
+                            border-radius: 0px 0px 0px 20px;
+    
+                            .svg__heart{
+                                position: absolute;
+                                transform: translate(-50%, -50%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// футер и права
+.text-right{
+    text-align: center;
+    font-size: $size-text-right;
+    margin-bottom: 10px;
+}
+
+.footer__container{
+    margin: 100px auto 50px auto;
+}
