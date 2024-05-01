@@ -22,10 +22,25 @@
             #card__next_btn{
                 width: 40px;
                 height: 40px;
-                background-color: $gold;
+                background-color: $btn-card-color;
                 position: absolute;
                 top:50%;
                 right: 2%;
+                cursor:pointer;
+
+                &:hover{
+                    background-color: $hover-btn-card-color;
+                    box-shadow: 0px 5px 7px 0px rgba(37, 37, 37, 0.15);
+                }
+
+                .arrow-next{
+                    position: relative;
+                    color: $white;
+                    top: 50%;
+                    left:50%;
+                    transform: translate(-50%, -50%);
+
+                }
             }
 
             .card{
@@ -36,7 +51,6 @@
                 .card__image{
                     width: $width-img;
                     height: $height-img;
-                    cursor: pointer;
                 }
                 .card-btn{
                     position: absolute;

@@ -1,0 +1,108 @@
+@import "../../sass/variables";
+@import "../../sass/mixin";
+@import "../../sass/fonts";
+
+*{
+    margin:0;
+    padding: 0;
+    color: $black;
+    box-sizing: border-box;  
+    list-style-type: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: $basic-font;
+    font-weight: $basic-weight;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.container__main__wrapper{
+    margin: 0 auto;
+    width: $width-main;
+    position: relative;
+}
+
+.container__navbar__wrapper{
+    position: absolute;
+}
+
+.container__navbar{
+    background-color: bisque        ;
+    margin: 0 auto;
+    position: relative;
+    width: $width-main;
+    height: $height-con-navbar;
+    ol,ul,form, a, div, p, h1{
+        color: $white;
+        font-size: $basic-text;
+        text-transform: uppercase;
+    }
+
+    .navbar{
+        margin: 24px auto 0 auto;
+        height: $height-navbar;
+        width: $width-basic;
+        z-index: 1;
+
+        .nav-elem{
+            cursor: pointer;
+        }
+
+        .navbar__left{
+            img{
+                width: 34px;
+            }
+            // padding: 0 20px;
+            .navbar__item{
+                margin-right: 104px;
+            }
+
+            .navbar__items{
+                width: 235px;
+                ol{
+                    width: fit-content;
+                    padding: 0;
+
+                }
+            }
+        }
+
+        .navbar__center{
+
+        }
+
+        .navbar__right{
+            margin-right: 60px;
+
+            .navbar__item{
+                margin-right: 70px;
+
+                .arrow-drop{
+                    margin-left: 9px;
+                }
+
+                .select{
+                    padding: 0 15px;
+                }
+
+                .item__navigation{
+                    padding: 0 15%;
+                }
+            }
+        }
+
+        .elements__navigation:last-child{
+            margin-right: 47px;
+        }
+    }
+}

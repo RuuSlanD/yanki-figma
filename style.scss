@@ -1,9 +1,7 @@
 @import "./source/sass/variables";
 @import "./source/sass/mixin";
 @import "./source/sass/fonts";
-@import "./source/sass/variables";
-@import "./source/sass/mixin";
-@import "./source/sass/fonts";
+
 
 
 
@@ -31,7 +29,6 @@
     flex-direction: column;
 }
 
-
 .container__main{
     margin: 0 auto;
     position: relative;
@@ -43,65 +40,6 @@
         font-size: $basic-text;
         text-transform: uppercase;
         // weight: 300;
-    }
-
-
-    .navbar{
-        margin: 24px auto 0 auto;
-        height: $height-navbar;
-        width: $width-basic;
-        z-index: 1;
-
-        .nav-elem{
-            cursor: pointer;
-        }
-
-        .navbar__left{
-            img{
-                width: 34px;
-            }
-            // padding: 0 20px;
-            .navbar__item{
-                margin-right: 104px;
-            }
-
-            .navbar__items{
-                width: 235px;
-                ol{
-                    width: fit-content;
-                    padding: 0;
-
-                }
-            }
-        }
-
-        .navbar__center{
-
-        }
-
-        .navbar__right{
-            margin-right: 60px;
-
-            .navbar__item{
-                margin-right: 70px;
-
-                .arrow-drop{
-                    margin-left: 5px;
-                }
-
-                .select{
-                    padding: 0 15px;
-                }
-
-                .item__navigation{
-                    padding: 0 15%;
-                }
-            }
-        }
-
-        .elements__navigation:last-child{
-            margin-right: 47px;
-        }
     }
 
     .heading__main{
@@ -125,9 +63,25 @@
             margin: 20px 0;
         }
 
-        p{
-            font-size: 16px;
-            cursor: pointer;
+        
+        .heading__text_wrapper{
+            flex-direction: row;
+            text-align: center;
+            position: relative;
+            p{
+                display: inline-block;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            
+            .heading__arrow-right{
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                right:-10%;
+                transform: translate(0, -50%);
+            }
+
         }
     }
 

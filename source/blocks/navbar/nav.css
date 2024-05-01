@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  color: #252525;
+  box-sizing: border-box;
+  list-style-type: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.container__main__wrapper {
+  margin: 0 auto;
+  width: 1440px;
+  position: relative;
+}
+
+.container__navbar__wrapper {
+  position: absolute;
+}
+
+.container__navbar {
+  background-color: bisque;
+  margin: 0 auto;
+  position: relative;
+  width: 1440px;
+  height: 100px;
+}
+.container__navbar ol, .container__navbar ul, .container__navbar form, .container__navbar a, .container__navbar div, .container__navbar p, .container__navbar h1 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.container__navbar .navbar {
+  margin: 24px auto 0 auto;
+  height: 40px;
+  width: 1140px;
+  z-index: 1;
+}
+.container__navbar .navbar .nav-elem {
+  cursor: pointer;
+}
+.container__navbar .navbar .navbar__left img {
+  width: 34px;
+}
+.container__navbar .navbar .navbar__left .navbar__item {
+  margin-right: 104px;
+}
+.container__navbar .navbar .navbar__left .navbar__items {
+  width: 235px;
+}
+.container__navbar .navbar .navbar__left .navbar__items ol {
+  width: fit-content;
+  padding: 0;
+}
+.container__navbar .navbar .navbar__right {
+  margin-right: 60px;
+}
+.container__navbar .navbar .navbar__right .navbar__item {
+  margin-right: 70px;
+}
+.container__navbar .navbar .navbar__right .navbar__item .arrow-drop {
+  margin-left: 9px;
+}
+.container__navbar .navbar .navbar__right .navbar__item .select {
+  padding: 0 15px;
+}
+.container__navbar .navbar .navbar__right .navbar__item .item__navigation {
+  padding: 0 15%;
+}
+.container__navbar .navbar .elements__navigation:last-child {
+  margin-right: 47px;
+}/*# sourceMappingURL=nav.css.map */

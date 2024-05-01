@@ -21,22 +21,32 @@
 .category_container__wrapper .category__container .card__container #card__next_btn {
   width: 40px;
   height: 40px;
-  background-color: #E0BEA2;
+  background-color: rgba(224, 190, 162, 0.7490196078);
   position: absolute;
   top: 50%;
   right: 2%;
+  cursor: pointer;
+}
+.category_container__wrapper .category__container .card__container #card__next_btn:hover {
+  background-color: hsl(27, 50%, 76%);
+  box-shadow: 0px 5px 7px 0px rgba(37, 37, 37, 0.15);
+}
+.category_container__wrapper .category__container .card__container #card__next_btn .arrow-next {
+  position: relative;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .category_container__wrapper .category__container .card__container .card {
   display: flex;
   flex-direction: column;
-  width: -moz-fit-content;
   width: fit-content;
   position: relative;
 }
 .category_container__wrapper .category__container .card__container .card .card__image {
   width: 274px;
   height: 450px;
-  cursor: pointer;
 }
 .category_container__wrapper .category__container .card__container .card .card-btn {
   position: absolute;

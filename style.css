@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -36,47 +35,6 @@
   font-size: 16px;
   text-transform: uppercase;
 }
-.container__main .navbar {
-  margin: 24px auto 0 auto;
-  height: 40px;
-  width: 1140px;
-  z-index: 1;
-}
-.container__main .navbar .nav-elem {
-  cursor: pointer;
-}
-.container__main .navbar .navbar__left img {
-  width: 34px;
-}
-.container__main .navbar .navbar__left .navbar__item {
-  margin-right: 104px;
-}
-.container__main .navbar .navbar__left .navbar__items {
-  width: 235px;
-}
-.container__main .navbar .navbar__left .navbar__items ol {
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 0;
-}
-.container__main .navbar .navbar__right {
-  margin-right: 60px;
-}
-.container__main .navbar .navbar__right .navbar__item {
-  margin-right: 70px;
-}
-.container__main .navbar .navbar__right .navbar__item .arrow-drop {
-  margin-left: 5px;
-}
-.container__main .navbar .navbar__right .navbar__item .select {
-  padding: 0 15px;
-}
-.container__main .navbar .navbar__right .navbar__item .item__navigation {
-  padding: 0 15%;
-}
-.container__main .navbar .elements__navigation:last-child {
-  margin-right: 47px;
-}
 .container__main .heading__main {
   position: absolute;
   top: 50%;
@@ -97,9 +55,22 @@
   background-color: #fff;
   margin: 20px 0;
 }
-.container__main .heading__main p {
+.container__main .heading__main .heading__text_wrapper {
+  flex-direction: row;
+  text-align: center;
+  position: relative;
+}
+.container__main .heading__main .heading__text_wrapper p {
+  display: inline-block;
   font-size: 16px;
   cursor: pointer;
+}
+.container__main .heading__main .heading__text_wrapper .heading__arrow-right {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: -10%;
+  transform: translate(0, -50%);
 }
 .container__main .background-img__wrapper {
   width: 100%;
